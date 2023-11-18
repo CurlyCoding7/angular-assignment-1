@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  username = 'Shalu';
+
+  updateUsername(event: Event){
+  this.username = (<HTMLInputElement>event.target).value;
+  }
+
+  reset(){
+    if(this.username !== ""){
+      this.username = ""
+
+    }
+  }
 }
