@@ -11,4 +11,4 @@
 
 <p>{{username}}</p>
 
-<button (click)="reset()">Reset</button>
+<button [disabled]="username == ''" (click)="reset()">Reset</button>
